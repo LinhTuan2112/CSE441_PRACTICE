@@ -1,125 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/main"
     android:padding="16dp">
 
-    <TableLayout
-        android:id="@+id/TableLayout2"
+    <!-- Row 1: Tiêu đề -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giải phương trình bậc 2"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Row 2: Nhập a -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="1">
+        android:orientation="horizontal">
 
-        <!-- Row 1: Tiêu đề -->
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập a:" />
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Giải phương trình bậc 2"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </TableRow>
+        <EditText
+            android:id="@+id/edita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
 
-        <!-- Row 2: Nhập a -->
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <!-- Row 3: Nhập b -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nhập a:" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập b:" />
 
-            <EditText
-                android:id="@+id/edita"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
-        </TableRow>
+        <EditText
+            android:id="@+id/editb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
 
-        <!-- Row 3: Nhập b -->
-        <TableRow
-            android:id="@+id/tableRow3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <!-- Row 4: Nhập c -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nhập b:" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập c:" />
 
-            <EditText
-                android:id="@+id/editb"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
-        </TableRow>
+        <EditText
+            android:id="@+id/editc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
 
-        <!-- Row 4: Nhập c -->
-        <TableRow
-            android:id="@+id/tableRow4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <!-- Row 5: Các nút -->
+    <LinearLayout
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nhập c:" />
+        <Button
+            android:id="@+id/btnTieptuc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tiếp tục" />
 
-            <EditText
-                android:id="@+id/editc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
-        </TableRow>
+        <Button
+            android:id="@+id/btnGiai"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Giải PT" />
 
-        <!-- Row 5: Các nút -->
-        <TableRow
-            android:id="@+id/tableRow5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnThoat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thoát" />
+    </LinearLayout>
 
-            <Button
-                android:id="@+id/btntieptuc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tiếp tục" />
+    <!-- Row 6: Kết quả -->
+    <TextView
+        android:id="@+id/txtkq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết quả sẽ được hiển thị tại đây"
+        android:textSize="16sp" />
 
-            <Button
-                android:id="@+id/btngiaiPT"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Giải PT" />
-
-            <Button
-                android:id="@+id/btnthoat"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Thoát" />
-        </TableRow>
-
-        <!-- Row 6: Kết quả -->
-        <TableRow
-            android:id="@+id/tableRow6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/txtkq"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Kết quả sẽ được hiển thị tại đây"
-                android:textSize="16sp" />
-        </TableRow>
-    </TableLayout>
 </LinearLayout>
