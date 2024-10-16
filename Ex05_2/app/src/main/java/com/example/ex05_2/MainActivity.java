@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 edita.requestFocus();
             }
         });
-
+        // thoat
         btnThoat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
