@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/main"
     android:padding="16dp">
 
     <TextView
@@ -109,7 +110,7 @@
             android:layout_height="wrap_content"
             android:text="Đọc sách"/>
         <CheckBox
-            android:id="@+id/chkDocCoding"
+            android:id="@+id/chkDocCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Đọc code" />
