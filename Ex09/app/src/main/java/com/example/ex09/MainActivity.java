@@ -1,4 +1,4 @@
-package com.example.servicedemo;
+package com.example.ex09;
 
 import android.content.Intent;
 import android.os.Bundle;
