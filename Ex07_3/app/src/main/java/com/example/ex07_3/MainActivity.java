@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         btnrequest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myintent = new Intent(MainActivity.this, SubActivity.class);
+                Intent myintent = new Intent(MainActivity.this, SubsActivity.class);
 
                 int a = Integer.parseInt(edtA.getText().toString());
                 int b = Integer.parseInt(edtB.getText().toString());
