@@ -1,4 +1,4 @@
-package com.example.simplecameraapp;
+package com.example.ex08_2;
 
 import android.Manifest;
 import android.content.Intent;
