@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/ac_cafe"
+        android:title="Cafe" />
+
+    <item
+        android:id="@+id/ac_nuoctraicay"
+        android:title="Nước trái cây" />
+    <item
+        android:id="@+id/ac_tradacbiet"
+        android:title="Trà đặc biệt" />
+    <item
+        android:id="@+id/ac_banhngot"
+        android:title="Bánh ngọt" />
+    <item
+        android:id="@+id/ac_banhman"
+        android:title="Bánh mặn" />
+
+</menu>

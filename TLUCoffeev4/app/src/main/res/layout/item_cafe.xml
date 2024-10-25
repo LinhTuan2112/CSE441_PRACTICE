@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/cafe_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tên cafe"
+        android:layout_weight="1"
+        android:textSize="18sp"
+         />
+    <TextView
+        android:id="@+id/cafe_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Giá"
+        android:layout_weight="1"
+        android:textSize="18sp"
+         />
+
+</LinearLayout>
